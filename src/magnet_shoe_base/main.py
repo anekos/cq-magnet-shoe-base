@@ -25,11 +25,11 @@
 import math
 
 import cadquery as cq
+from click_cadquery import BuildParam
 from click_cadquery.git import version_number as ver
-from pydantic import BaseModel
 
 
-class Param(BaseModel):
+class Param(BuildParam):
     # --- 背板 ---
     plate_w: float = 80.0  # 背板の幅
     plate_h: float = 80.0  # 背板の高さ
