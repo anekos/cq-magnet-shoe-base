@@ -14,7 +14,7 @@ requires = ["hatchling"]
 build-backend = "hatchling.build"
 
 [project.scripts]
-magnet-shoe-base = "magnet_shoe_base:main"
+app = "magnet_shoe_base:main"
 
 [tool.hatch.build.targets.wheel]
 packages = ["src/magnet_shoe_base"]

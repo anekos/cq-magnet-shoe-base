@@ -1,14 +1,14 @@
 .PHONY: interactive
 interactive:
-	uv run magnet-shoe-base -- interactive
+	uv run app -- interactive
 
 .PHONY: build
 build:
-	axe src/**/*.py -- uv run magnet-shoe-base -- build
+	axe src/**/*.py -- uv run app -- build
 
 .PHONY: watch
 watch:
-	axe src/**/*.py -- uv run magnet-shoe-base -- build --show
+	axe src/**/*.py -- uv run app -- build --show
 
 .PHONY: setup
 setup:
